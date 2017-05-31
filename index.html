@@ -16,10 +16,9 @@
       <div class="panel-heading">
         <h2>Make an Appointment</h2>
       </div>
-
       <div class="panel-body">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-4">
             <div id="blanks">
               <form>
                 <h3>Client Information</h3>
@@ -27,54 +26,68 @@
                   <label for="userFirstName">First Name</label>
                   <input id="userFirstName" class="form-control" type="text" placeholder="Bart">
                 </div>
-
                 <div class="form-group">
                   <label for="userLastName">Last Name</label>
                   <input id="userLastName" class="form-control" type="text" placeholder="Simpson">
                 </div>
+
+                <div class="form-group">
+                  <label for="userEmail">Email</label>
+                  <input id="userEmail" class="form-control" type="email" placeholder="bart.simpson@gmail.com">
+                </div>
+
+                <div class="form-group">
+                  <label for="userTel">Telephone</label>
+                  <input id="userTel" class="form-control" type="tel" placeholder="(503) 555-5555">
+                </div>
+
                 <h3>Appointment Details</h3>
                 <div class="form-group">
                   <label for="appointmentDate">Date</label>
                   <input id="appointmentDate" class="form-control" type="Date">
                 </div>
-
                 <div class="row">
-
-
                   <div class="col-md-6">
                     <div class="form-group">
                       <label for="appointmentStartTime">Start Time</label>
                       <p><select id="appointmentStartTime" class="form-control">
-                    <option value="800">0800h</option>
-                    <option value="900">0900h</option>
-                    <option value="1000">1000h</option>
-                    <option value="1100">1100h</option>
-                    <option value="1200">1400h</option>
-                    <option value="1300">1500h</option>
-                  </select></p>
+                        <option value="0">Pick a time</option>
+                        <option value="0800">0800h</option>
+                        <option value="0900">0900h</option>
+                        <option value="1000">1000h</option>
+                        <option value="1100">1100h</option>
+                        <option value="1200">1400h</option>
+                        <option value="1300">1500h</option>
+                      </select></p>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
                       <label for="appointmentEndTime">End Time</label>
                       <p><select id="appointmentEndTime" class="form-control">
-                    <option value="800">0800h</option>
-                    <option value="900">0900h</option>
-                    <option value="1000">1000h</option>
-                    <option value="1100">1100h</option>
-                    <option value="1200">1400h</option>
-                    <option value="1300">1500h</option>
-                  </select></p>
+                        <option value="0">Pick a time</option>
+                        <option value="0800">0800h</option>
+                        <option value="0900">0900h</option>
+                        <option value="1000">1000h</option>
+                        <option value="1100">1100h</option>
+                        <option value="1200">1400h</option>
+                        <option value="1300">1500h</option>
+                      </select></p>
                     </div>
                   </div>
                 </div>
+
+                <div class="form-check">
+                  <label class="form-check-label" for="wannaWidget">
+                  <input id="wannaWidget" type="checkbox" class="form-check-input">  Please send me a text reminder.</label>
+                </div>
+                <br>
                 <button type="submit" class="btn">Request your appointment.</button>
               </form>
-
             </div>
 
           </div>
-          <div class="col-md-9">
+          <div class="col-md-8">
             <div id="emptyForm">
               <img src="img/service.jpg" alt="an image of generic service being performed">
               <p>Thank you for considering us for Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -83,9 +96,12 @@
             <div id="confirmation">
               <h2><span class="userFirstName"></span> your appointment is confirmed.</h2>
               <p>
-                <span class="userFirstName"></span> <span class="userLastName"></span><br>
-                <span class="appointmentDate"></span><br>
-                <br> Please arrive 15 minutes before your appointment; which is scheduled to begin at <span class="appointmentStartTime"></span>, in order to fill out necessary paperwork. Your appointment should be complete by <span class="appointmentEndTime"></span>.
+                <strong>Client:</strong> <span class="userFirstName"></span> <span class="userLastName"></span><br>
+                <strong>Client Email:</strong> <span class="userEmail"></span><br>
+                <strong>Client Telephone:</strong> <span class="userTel"></span><br>
+                <strong>Appointment Date:</strong> <span class="appointmentDate"></span><br>
+                <strong>Appointment Duration:</strong> <span class="appointmentStartTime"></span>h to <span class="appointmentEndTime"></span>h<br>
+                <br> Please arrive 15 minutes before your appointment; which is scheduled to begin at <span class="appointmentStartTime"></span>h, in order to fill out necessary paperwork. Your appointment should be complete by <span class="appointmentEndTime"></span>h.
               </p>
 
             </div>
