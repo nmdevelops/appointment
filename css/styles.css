@@ -4,8 +4,8 @@
   padding: 10px;
 }
 
-#emptyForm {
-  padding: 10px;
+#emptyForm img {
+  padding-top: 20px;
 }
 
 #emptyForm p {
@@ -13,6 +13,5 @@
 }
 
 form {
-  padding-top: 10px;
   padding-left: 10px;
 }

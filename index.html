@@ -22,7 +22,7 @@
           <div class="col-md-4">
             <div id="blanks">
               <form>
-
+<h3>Client Information</h3>
                 <div class="form-group">
                   <label for="userFirstName">First Name</label>
                   <input id="userFirstName" class="form-control" type="text">
@@ -32,14 +32,18 @@
                   <label for="userLastName">Last Name</label>
                   <input id="userLastName" class="form-control" type="text">
                 </div>
-
+<h3>Appointment Details</h3>
                 <div class="form-group">
-                  <label for="appointmentDate">Appointment Date</label>
+                  <label for="appointmentDate">Date</label>
                   <input id="appointmentDate" class="form-control" type="Date">
                 </div>
 
+                <div class="row">
+
+
+<div class="col-md-6">
                 <div class="form-group">
-                  <label for="appointmentStartTime">Appointment Start Time</label>
+                  <label for="appointmentStartTime">Start Time</label>
                   <p><select id="appointmentStartTime" class="form-control">
                     <option value="800">0800h</option>
                     <option value="900">0900h</option>
@@ -49,9 +53,10 @@
                     <option value="1300">1500h</option>
                   </select></p>
                 </div>
-
+</div>
+<div class="col-md-6">
                 <div class="form-group">
-                  <label for="appointmentEndTime">Appointment End Time</label>
+                  <label for="appointmentEndTime">End Time</label>
                   <p><select id="appointmentEndTime" class="form-control">
                     <option value="800">0800h</option>
                     <option value="900">0900h</option>
@@ -61,7 +66,8 @@
                     <option value="1300">1500h</option>
                   </select></p>
                 </div>
-
+              </div>
+</div>
                 <button type="submit" class="btn">Request your appointment.</button>
               </form>
 
