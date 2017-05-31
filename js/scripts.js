@@ -3,7 +3,7 @@ $(document).ready(function() {
     var userFirstNameInput = $("input#userFirstName").val();
     var userLastNameInput = $("input#userLastName").val();
     var appointmentDateInput = $("input#appointmentDate").val();
-    var appointmentStartTimeInput = $("input#appointmentStartTime").val();
+    var appointmentStartTimeInput = $("select#appointmentStartTime").val();
     var appointmentEndTimeInput = $("input#appointmentEndTime").val();
 
 

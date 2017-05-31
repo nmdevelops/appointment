@@ -11,62 +11,76 @@
 
 <body>
   <div class="container">
-<br>
+    <br>
     <div class="panel panel-success">
       <div class="panel-heading">
         <h2>Make an Appointment</h2>
       </div>
 
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-md-6">
+            <div id="blanks">
+              <form>
 
-      <div id="blanks">
-        <form>
+                <div class="form-group">
+                  <label for="userFirstName">First Name</label>
+                  <input id="userFirstName" class="form-control" type="text">
+                </div>
 
-          <div class="form-group">
-            <label for="userFirstName">First Name</label>
-            <input id="userFirstName" class="form-control" type="text">
+                <div class="form-group">
+                  <label for="userLastName">Last Name</label>
+                  <input id="userLastName" class="form-control" type="text">
+                </div>
+
+                <div class="form-group">
+                  <label for="appointmentDate">Appointment Date</label>
+                  <input id="appointmentDate" class="form-control" type="Date">
+                </div>
+
+                <div class="form-group">
+                  <label for="appointmentStartTime">Appointment Start Time</label>
+                  <p><select id="appointmentStartTime">
+                    <option>0800h</option>
+                    <option>0900h</option>
+                    <option>1000h</option>
+                    <option>1100h</option>
+                    <option>1400h</option>
+                    <option>1500h</option>
+                  </select></p>
+                </div>
+
+                <div class="form-group">
+                  <label for="appointmentEndTime">Appointment End Time</label>
+                  <input id="appointmentEndTime" class="form-control" type="time">
+                </div>
+
+                <button type="submit" class="btn">Request your appointment.</button>
+              </form>
+
+            </div>
+
           </div>
+          <div class="col-md-6">
+            <div id="confirmation">
+              <h2><span class="userFirstName"></span> your appointment is confirmed.</h2>
+              <p>
+                <span class="userFirstName"></span> <span class="userLastName"></span><br>
+                <span class="appointmentDate"></span><br>
+                <br> Please arrive 15 minutes before your appointment; which is scheduled to begin at <span class="appointmentStartTime"></span>. Your appointment should be complete by <span class="appointmentEndTime"></span>.
+              </p>
+              <!-- Insert MB code here !-->
+            </div>
 
-          <div class="form-group">
-            <label for="userLastName">Last Name</label>
-            <input id="userLastName" class="form-control" type="text">
           </div>
-
-          <div class="form-group">
-            <label for="appointmentDate">Appointment Date</label>
-            <input id="appointmentDate" class="form-control" type="Date">
-          </div>
-
-          <div class="form-group">
-            <label for="appointmentStartTime">Appointment Start Time</label>
-            <input id="appointmentStartTime" class="form-control" type="time">
-          </div>
-
-          <div class="form-group">
-            <label for="appointmentEndTime">Appointment End Time</label>
-            <input id="appointmentEndTime" class="form-control" type="time">
-          </div>
-          <!-- Insert additional fields here !-->
-
-
-          <button type="submit" class="btn">Request your appointment.</button>
-        </form>
-
+        </div>
       </div>
+
     </div>
 
 
 
 
-    <div id="confirmation">
-      <h2><span class="userFirstName"></span> your appointment is confirmed.</h2>
-      <p>
-        <span class="userFirstName"></span> <span class="userLastName"></span><br>
-        <span class="appointmentDate"></span><br>
-        <br>
-        Please arrive 15 minutes before your appointment; which is scheduled to begin at <span class="appointmentStartTime"></span>. Your appointment should be complete by <span class="appointmentEndTime"></span>.
-      </p>
-      <!-- Insert MB code here !-->
-    </div>
 
   </div>
 

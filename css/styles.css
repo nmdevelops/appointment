@@ -1,3 +1,12 @@
 #confirmation {
   display: none;
 }
+
+form {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+select {
+  font-size: 30px;
+}
