@@ -1,5 +1,15 @@
 #confirmation {
   display: none;
+  background-color: #efefef;
+  padding: 10px;
+}
+
+#emptyForm {
+  padding: 10px;
+}
+
+#emptyForm p {
+  padding-top: 10px;
 }
 
 form {
@@ -8,5 +18,5 @@ form {
 }
 
 select {
-  font-size: 30px;
+  font-size: 18px;
 }

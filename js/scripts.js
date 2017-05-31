@@ -4,7 +4,7 @@ $(document).ready(function() {
     var userLastNameInput = $("input#userLastName").val();
     var appointmentDateInput = $("input#appointmentDate").val();
     var appointmentStartTimeInput = $("select#appointmentStartTime").val();
-    var appointmentEndTimeInput = $("input#appointmentEndTime").val();
+    var appointmentEndTimeInput = $("select#appointmentEndTime").val();
 
 
 
@@ -17,6 +17,7 @@ $(document).ready(function() {
 
 
     $("#confirmation").show();
+    $("#emptyForm").hide();
     event.preventDefault();
 
   });
