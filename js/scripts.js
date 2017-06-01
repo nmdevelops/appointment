@@ -8,10 +8,7 @@ $(document).ready(function() {
     var appointmentStartTimeInput = $("select#appointmentStartTime").val();
     var appointmentEndTimeInput = $("select#appointmentEndTime").val();
     var userSpecialRequestInput = $("textarea#userSpecialRequest").val();
-    var optInInput = $("input#optIn").val();
-
-
-//write function to change boolean true to string "will" and false to "will not"
+    var optInInput = $("input:radio[name=optIn]:checked").val();
 
     $(".userFirstName").text(userFirstNameInput);
     $(".userLastName").text(userLastNameInput);
@@ -22,7 +19,6 @@ $(document).ready(function() {
     $(".appointmentEndTime").text(appointmentEndTimeInput);
     $(".userSpecialRequest").text(userSpecialRequestInput);
     $(".optIn").text(optInInput);
-
 
     $("#confirmation").show();
     $("#emptyForm").hide();

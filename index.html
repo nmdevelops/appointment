@@ -59,6 +59,7 @@
                     </div>
                   </div>
                   <div class="col-md-6">
+
                     <div class="form-group">
                       <label for="appointmentEndTime">End Time</label>
                       <p><select id="appointmentEndTime" class="form-control">
@@ -71,15 +72,22 @@
                         <option value="1300">1500h</option>
                       </select></p>
                     </div>
+
                   </div>
                 </div>
+
                 <div class="form-group">
                   <label for="userSpecialRequest">Special Request(s)</label><br>
                   <textarea id="userSpecialRequest" rows="4" cols="45"></textarea>
                 </div>
-                <div class="form-check">
-                  <label class="form-check-label" for="optIn">
-                  <input id="optIn" type="checkbox" class="form-check-input" value="will ">  Please send me a text reminder.</label>
+
+                <div class="radio">
+                  <label>
+                  <input name="optIn" type="radio" value="will ">  Please send me a text reminder.</label>
+                </div>
+                <div class="radio">
+                  <label>
+                  <input type="radio" name="optIn" value="will not " checked>  Please do NOT send me a text reminder.</label>
                 </div>
                 <br>
                 <button type="submit" class="btn">Request your appointment.</button>
