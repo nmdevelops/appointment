@@ -7,9 +7,11 @@ $(document).ready(function() {
     var appointmentDateInput = $("input#appointmentDate").val();
     var appointmentStartTimeInput = $("select#appointmentStartTime").val();
     var appointmentEndTimeInput = $("select#appointmentEndTime").val();
+    var userSpecialRequestInput = $("textarea#userSpecialRequest").val();
+    var optInInput = $("input#optIn").val();
 
 
-
+//write function to change boolean true to string "will" and false to "will not"
 
     $(".userFirstName").text(userFirstNameInput);
     $(".userLastName").text(userLastNameInput);
@@ -18,6 +20,8 @@ $(document).ready(function() {
     $(".appointmentDate").text(appointmentDateInput);
     $(".appointmentStartTime").text(appointmentStartTimeInput);
     $(".appointmentEndTime").text(appointmentEndTimeInput);
+    $(".userSpecialRequest").text(userSpecialRequestInput);
+    $(".optIn").text(optInInput);
 
 
     $("#confirmation").show();

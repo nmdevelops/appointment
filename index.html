@@ -30,17 +30,14 @@
                   <label for="userLastName">Last Name</label>
                   <input id="userLastName" class="form-control" type="text" placeholder="Simpson">
                 </div>
-
                 <div class="form-group">
                   <label for="userEmail">Email</label>
                   <input id="userEmail" class="form-control" type="email" placeholder="bart.simpson@gmail.com">
                 </div>
-
                 <div class="form-group">
                   <label for="userTel">Telephone</label>
                   <input id="userTel" class="form-control" type="tel" placeholder="(503) 555-5555">
                 </div>
-
                 <h3>Appointment Details</h3>
                 <div class="form-group">
                   <label for="appointmentDate">Date</label>
@@ -76,16 +73,18 @@
                     </div>
                   </div>
                 </div>
-
+                <div class="form-group">
+                  <label for="userSpecialRequest">Special Request(s)</label><br>
+                  <textarea id="userSpecialRequest" rows="4" cols="45"></textarea>
+                </div>
                 <div class="form-check">
-                  <label class="form-check-label" for="wannaWidget">
-                  <input id="wannaWidget" type="checkbox" class="form-check-input">  Please send me a text reminder.</label>
+                  <label class="form-check-label" for="optIn">
+                  <input id="optIn" type="checkbox" class="form-check-input" value="will ">  Please send me a text reminder.</label>
                 </div>
                 <br>
                 <button type="submit" class="btn">Request your appointment.</button>
               </form>
             </div>
-
           </div>
           <div class="col-md-8">
             <div id="emptyForm">
@@ -103,21 +102,16 @@
                 <strong>Appointment Duration:</strong> <span class="appointmentStartTime"></span>h to <span class="appointmentEndTime"></span>h<br>
                 <br> Please arrive 15 minutes before your appointment; which is scheduled to begin at <span class="appointmentStartTime"></span>h, in order to fill out necessary paperwork. Your appointment should be complete by <span class="appointmentEndTime"></span>h.
               </p>
-
+              <p>We <span class="optIn"></span>send you an appointment reminder via text message.</p>
+              <p>We appreciate the time you took to make your special request. Please review your submitted request below and <a href="mailto:nm.develops@gmail.com">email us with any revisions</a>.</p>
+              <blockquote>
+                <span class="userSpecialRequest"></span></p>
+              </blockquote>
             </div>
-
           </div>
         </div>
       </div>
-
     </div>
-
-
-
-
-
   </div>
-
 </body>
-
 </html>
